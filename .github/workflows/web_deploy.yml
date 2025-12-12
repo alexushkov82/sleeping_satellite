@@ -1,0 +1,41 @@
+name: Deploy Flutter Web to Firebase Hosting
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Read Flutter version from .fvmrc
+        id: fvm_version
+        run: |
+          FLUTTER_VERSION=$(jq -r '.flutter' .fvmrc)
+          echo "flutter_version=$FLUTTER_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Install Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ steps.fvm_version.outputs.flutter_version }}
+
+      - name: Flutter doctor
+        run: flutter doctor
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Flutter Web
+        run: flutter build web --release
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          channelId: live

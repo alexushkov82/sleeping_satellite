@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "sleeping-satellite"
+  },
+  "targets": {
+    "sleeping-satellite": {
+      "hosting": {
+        "alex": [
+          "alexushkov82"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

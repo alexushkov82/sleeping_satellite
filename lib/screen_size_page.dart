@@ -20,10 +20,8 @@ class _ScreenSizePageState extends State<ScreenSizePage> {
   }
 
   void _updateBrowserTitle(String deviceType) {
-    // Меняем заголовок вкладки в зависимости от типа устройства
-    BrowserTitle.setWithBase(
+    BrowserTitle.set(
       '${deviceType.toUpperCase()} View',
-      baseTitle: 'Screen Size Monitor',
     );
   }
 

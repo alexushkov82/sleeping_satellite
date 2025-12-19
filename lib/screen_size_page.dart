@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'utils/browser_title.dart';
 
 class ScreenSizePage extends StatefulWidget {
   const ScreenSizePage({super.key});
@@ -18,6 +19,14 @@ class _ScreenSizePageState extends State<ScreenSizePage> {
     }
   }
 
+  void _updateBrowserTitle(String deviceType) {
+    // Меняем заголовок вкладки в зависимости от типа устройства
+    BrowserTitle.setWithBase(
+      '${deviceType.toUpperCase()} View',
+      baseTitle: 'Screen Size Monitor',
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +35,11 @@ class _ScreenSizePageState extends State<ScreenSizePage> {
           final width = constraints.maxWidth;
           final height = constraints.maxHeight;
           final deviceType = _getDeviceType(width);
+          
+          // Обновляем заголовок вкладки при изменении размера
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _updateBrowserTitle(deviceType);
+          });
 
           return Container(
             decoration: BoxDecoration(

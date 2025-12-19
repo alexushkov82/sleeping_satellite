@@ -29,7 +29,7 @@ Notes:
 ## Build
 
 Build the Flutter Web application:
-flutter build web
+fvm flutter build web
 
 The output will be generated in:
 build/web

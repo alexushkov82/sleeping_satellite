@@ -1,6 +1,4 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
-
-// Условный импорт для веб-платформы
 import 'dart:html' as html if (dart.library.io) 'dart:io';
 
 /// Утилита для изменения заголовка вкладки браузера

@@ -1,7 +1,7 @@
 {
     "name": "Alex Ushkov",
     "start_url": ".",
-    "display": "standalone",
+    "display": "browser",
     "background_color": "#FFFFFF",
     "theme_color": "#FF6B35",
     "description": "About Alex Ushkov",

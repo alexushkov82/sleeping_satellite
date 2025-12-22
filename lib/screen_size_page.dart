@@ -19,10 +19,10 @@ class _ScreenSizePageState extends State<ScreenSizePage> {
     }
   }
 
-  void _updateBrowserTitle(String deviceType) {
-    BrowserTitle.set(
-      '${deviceType.toUpperCase()} View',
-    );
+  @override
+  void initState() {
+    BrowserTitle.set('Alex Ushkov');
+    super.initState();
   }
 
   @override
@@ -33,11 +33,6 @@ class _ScreenSizePageState extends State<ScreenSizePage> {
           final width = constraints.maxWidth;
           final height = constraints.maxHeight;
           final deviceType = _getDeviceType(width);
-          
-          // Обновляем заголовок вкладки при изменении размера
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            _updateBrowserTitle(deviceType);
-          });
 
           return Container(
             decoration: BoxDecoration(

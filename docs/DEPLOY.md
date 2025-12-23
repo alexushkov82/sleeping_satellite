@@ -3,8 +3,6 @@
 This document describes how to build and deploy the Flutter Web application
 to Firebase Hosting.
 
----
-
 ## Overview
 
 The Firebase project contains two Hosting sites:
@@ -17,14 +15,10 @@ The Firebase project contains two Hosting sites:
 Notes:
 - The Firebase project name is `sleeping-satellite`
 
----
-
 ## Requirements
 
 - Flutter (managed via FVM)
 - Firebase CLI
-
----
 
 ## Build
 
@@ -33,8 +27,6 @@ fvm flutter build web
 
 The output will be generated in:
 build/web
-
----
 
 ## Deploy
 

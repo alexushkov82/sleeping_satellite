@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screen_size_page.dart';
+import 'resume_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF00d4ff),
+          brightness: Brightness.dark,
+        ),
         useMaterial3: true,
       ),
-      home: const ScreenSizePage(),
+      home: const ResumePage(),
     );
   }
 }

@@ -1,18 +1,16 @@
 .PHONY: deploy deploy-default build
 
-# Деплой на production (alexushkov82)
+# Build project & Deploy to production (alexushkov82)
 deploy:
 	@./scripts/deploy.sh
 
-# Деплой на default hosting (sleeping-satellite)
+# Build project & Deploy to default hosting (sleeping-satellite)
 deploy-default:
 	@./scripts/deploy-default.sh
 
-# Только сборка без деплоя
+# Build project
 build:
-	@echo "🚀 Начинаю сборку Flutter Web приложения..."
-	@fvm flutter build web
-	@echo "✅ Сборка завершена успешно!"
+	@./scripts/build.sh
 
 
 

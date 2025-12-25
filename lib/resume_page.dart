@@ -75,7 +75,7 @@ class _ResumePageState extends State<ResumePage> {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF00d4ff).withOpacity(0.3),
+                  color: const Color(0xFF00d4ff).withValues(alpha: 0.3),
                   blurRadius: 20,
                   spreadRadius: 5,
                 ),
@@ -114,7 +114,7 @@ class _ResumePageState extends State<ResumePage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
             decoration: BoxDecoration(
-              color: const Color(0xFF00d4ff).withOpacity(0.2),
+              color: const Color(0xFF00d4ff).withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(30),
               border: Border.all(
                 color: const Color(0xFF00d4ff),
@@ -138,7 +138,7 @@ class _ResumePageState extends State<ResumePage> {
             children: [
               Icon(
                 Icons.location_on,
-                color: Colors.white.withOpacity(0.7),
+                color: Colors.white.withValues(alpha: 0.7),
                 size: 20,
               ),
               const SizedBox(width: 8),
@@ -146,7 +146,7 @@ class _ResumePageState extends State<ResumePage> {
                 'Minsk, Belarus • 22 years old',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white.withOpacity(0.7),
+                  color: Colors.white.withValues(alpha: 0.7),
                 ),
               ),
             ],
@@ -163,10 +163,10 @@ class _ResumePageState extends State<ResumePage> {
       child: Container(
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.05),
+          color: Colors.white.withValues(alpha: 0.05),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha: 0.1),
             width: 1,
           ),
         ),
@@ -254,10 +254,10 @@ class _ResumePageState extends State<ResumePage> {
             return Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.15),
+                color: color.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
-                  color: color.withOpacity(0.5),
+                  color: color.withValues(alpha: 0.5),
                   width: 1.5,
                 ),
               ),
@@ -312,10 +312,10 @@ class _ResumePageState extends State<ResumePage> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: color.withOpacity(0.3),
+          color: color.withValues(alpha: 0.3),
           width: 1,
         ),
       ),
@@ -359,7 +359,7 @@ class _ResumePageState extends State<ResumePage> {
                       period,
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.white.withOpacity(0.6),
+                        color: Colors.white.withValues(alpha: 0.6),
                       ),
                     ),
                   ],
@@ -374,7 +374,7 @@ class _ResumePageState extends State<ResumePage> {
               description,
               style: TextStyle(
                 fontSize: 15,
-                color: Colors.white.withOpacity(0.8),
+                color: Colors.white.withValues(alpha: 0.8),
                 height: 1.5,
               ),
             ),
@@ -391,10 +391,10 @@ class _ResumePageState extends State<ResumePage> {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.05),
+          color: Colors.white.withValues(alpha: 0.05),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: const Color(0xFF06ffa5).withOpacity(0.3),
+            color: const Color(0xFF06ffa5).withValues(alpha: 0.3),
             width: 1,
           ),
         ),
@@ -426,7 +426,7 @@ class _ResumePageState extends State<ResumePage> {
                     '2020 - 2024',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.white.withValues(alpha: 0.7),
                     ),
                   ),
                 ],
@@ -445,10 +445,10 @@ class _ResumePageState extends State<ResumePage> {
       child: Container(
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.05),
+          color: Colors.white.withValues(alpha: 0.05),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha: 0.1),
             width: 1,
           ),
         ),
@@ -486,10 +486,10 @@ class _ResumePageState extends State<ResumePage> {
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: color.withOpacity(0.2),
+            color: color.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: color.withOpacity(0.5),
+              color: color.withValues(alpha: 0.5),
               width: 1,
             ),
           ),
@@ -508,7 +508,7 @@ class _ResumePageState extends State<ResumePage> {
                 label,
                 style: TextStyle(
                   fontSize: 12,
-                  color: Colors.white.withOpacity(0.6),
+                  color: Colors.white.withValues(alpha: 0.6),
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -543,7 +543,7 @@ class _ResumePageState extends State<ResumePage> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00d4ff).withOpacity(0.2),
+                  color: const Color(0xFF00d4ff).withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
                     color: const Color(0xFF00d4ff),
